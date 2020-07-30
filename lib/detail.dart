@@ -119,7 +119,7 @@ class _DetailState extends State<Detail> {
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
                   new RaisedButton(
-                    child: new Text("Edit Stok"),
+                    child: new Text("Edit Kategori"),
                     color: Colors.green,
                     onPressed: () =>
                         Navigator.of(context).push(new MaterialPageRoute(
@@ -130,7 +130,7 @@ class _DetailState extends State<Detail> {
                     )),
                   ),
                   new RaisedButton(
-                    child: new Text("Delete Stok"),
+                    child: new Text("Delete Kategori"),
                     color: Colors.red,
                     onPressed: () => confirm(),
                   )

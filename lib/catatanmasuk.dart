@@ -28,14 +28,6 @@ class _CatatanMasukState extends State<CatatanMasuk> {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(title: new Text("Lap. Riwayat Keuangan Masuk")),
-      floatingActionButton: new FloatingActionButton(
-        child: new Icon(Icons.add),
-        onPressed: () => Navigator.of(context).push(
-          new MaterialPageRoute(
-            builder: (BuildContext context) => new AddData(),
-          ),
-        ),
-      ),
       body: new FutureBuilder<List>(
         future: getData(),
         builder: (context, snapshot) {
